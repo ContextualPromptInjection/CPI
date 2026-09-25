@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cpi-mcp-scanner"
+version = "0.1.0"
+description = "Reproducible Contextual Prompt Injection experiments for MCP security scanners"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+cpi = "cpi.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["cpi*"]
